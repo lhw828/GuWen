@@ -22,6 +22,11 @@
         a:hover {
             text-decoration: underline;
         }
+        footer {
+            margin-top: 2em;
+            border-top: 1px solid #ccc;
+            padding-top: 1em;
+        }
     </style>
 </head>
 <body>
@@ -31,7 +36,6 @@
         <li>📁 <a href="儒藏/index.html">儒藏</a></li>
         <li>📁 <a href="医藏/index.html">医藏</a></li>
         <li>📁 <a href="史藏/index.html">史藏</a></li>
-        <li>📁 <a href="子其他/index.html">子其他</a></li>
         <li>📁 <a href="子藏/index.html">子藏</a></li>
         <li>📁 <a href="易藏/index.html">易藏</a></li>
         <li>📁 <a href="艺藏/index.html">艺藏</a></li>
@@ -39,5 +43,78 @@
         <li>📁 <a href="道藏/index.html">道藏</a></li>
         <li>📁 <a href="集藏/index.html">集藏</a></li>
     </ul>
+
+    <!-- 随机链接部分 -->
+    <footer>
+        <h2>💡 随机推荐</h2>
+        <ul id="random-links"></ul>
+    </footer>
+
+    <script>
+        // 获取 random_pages 文件夹中的所有 JSON 文件名
+        function fetchRandomPagesFiles() {
+            return fetch('random_pages/', { method: 'GET' })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    // 假设服务器返回的是一个包含文件名的 JSON 列表
+                    return response.json();
+                })
+                .catch(error => {
+                    console.error('无法加载 random_pages 文件夹内容:', error);
+                    throw error;
+                });
+        }
+
+        // 从指定的 JSON 文件中加载数据
+        function fetchRandomPagesData(filename) {
+            return fetch(`random_pages/${filename}`, { method: 'GET' })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .catch(error => {
+                    console.error(`无法加载 ${filename}:`, error);
+                    throw error;
+                });
+        }
+
+        // 从页面列表中随机选择 10 个链接
+        function getRandomLinks(pages, count = 10) {
+            if (pages.length === 0) throw new Error('没有找到任何链接');
+            const shuffled = pages.sort(() => 0.5 - Math.random()); // 随机打乱数组
+            return shuffled.slice(0, count); // 取前 10 个
+        }
+
+        // 主逻辑：动态获取文件列表并随机选择一个 JSON 文件，从中选择 10 个链接
+        document.addEventListener('DOMContentLoaded', () => {
+            fetchRandomPagesFiles()
+                .then(files => {
+                    if (files.length === 0) throw new Error('没有找到任何 JSON 文件');
+                    // 过滤出以 .json 结尾的文件
+                    const jsonFiles = files.filter(file => file.endsWith('.json'));
+                    if (jsonFiles.length === 0) throw new Error('没有找到任何 JSON 文件');
+                    const randomFile = jsonFiles[Math.floor(Math.random() * jsonFiles.length)];
+                    return fetchRandomPagesData(randomFile);
+                })
+                .then(pages => {
+                    const randomLinks = getRandomLinks(pages, 10); // 随机选择 10 个链接
+                    const randomLinksContainer = document.getElementById('random-links');
+                    randomLinks.forEach(page => {
+                        const li = document.createElement('li');
+                        li.innerHTML = `📄 <a href="${page.url}">${page.name}</a>`;
+                        randomLinksContainer.appendChild(li);
+                    });
+                })
+                .catch(error => {
+                    console.error('发生错误:', error);
+                    const randomLinksContainer = document.getElementById('random-links');
+                    randomLinksContainer.innerHTML = `<p>无法加载随机链接: ${error.message}</p>`;
+                });
+        });
+    </script>
 </body>
 </html>
