@@ -102,66 +102,65 @@
 
     <script>
         // 获取 random_pages/files.json 中的文件列表
-        function fetchRandomPagesFiles() {
-            return fetch('/random_pages/files.json', { method: 'GET' })
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error(`HTTP error! status: ${response.status}`);
-                    }
-                    return response.json();
-                })
-                .catch(error => {
-                    console.error('无法加载 random_pages 文件夹内容:', error);
-                    throw error;
-                });
+        async function fetchRandomPagesFiles() {
+            try {
+                const response = await fetch('random_pages/files.json');
+                if (!response.ok) throw new Error(`HTTP 错误! 状态码: ${response.status}`);
+                return await response.json();
+            } catch (error) {
+                console.error('无法加载文件列表:', error);
+                throw error;
+            }
         }
 
         // 从指定的 JSON 文件中加载数据
-        function fetchRandomPagesData(filename) {
-            return fetch(`/random_pages/${filename}`, { method: 'GET' })
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error(`HTTP error! status: ${response.status}`);
-                    }
-                    return response.json();
-                })
-                .catch(error => {
-                    console.error(`无法加载 ${filename}:`, error);
-                    throw error;
-                });
+        async function fetchRandomPagesData(filename) {
+            try {
+                const response = await fetch(`random_pages/${filename}`);
+                if (!response.ok) throw new Error(`HTTP 错误! 状态码: ${response.status}`);
+                return await response.json();
+            } catch (error) {
+                console.error(`无法加载数据文件: ${filename}`, error);
+                throw error;
+            }
         }
 
         // 从页面列表中随机选择 50 个链接
         function getRandomLinks(pages, count = 49) {
-            if (pages.length === 0) throw new Error('没有找到任何链接');
-            const shuffled = pages.sort(() => 0.5 - Math.random()); // 随机打乱数组
-            return shuffled.slice(0, count); // 取前 50 个
+            if (!pages || pages.length === 0) throw new Error('没有找到任何链接');
+            const shuffled = [...pages].sort(() => 0.5 - Math.random());
+            return shuffled.slice(0, count);
         }
 
-        // 主逻辑：动态获取文件列表并随机选择一个 JSON 文件，从中选择 50 个链接
-        document.addEventListener('DOMContentLoaded', () => {
-            fetchRandomPagesFiles()
-                .then(files => {
-                    if (files.length === 0) throw new Error('没有找到任何 JSON 文件');
-                    const jsonFiles = files.filter(file => file.endsWith('.json'));
-                    if (jsonFiles.length === 0) throw new Error('没有找到任何 JSON 文件');
-                    const randomFile = jsonFiles[Math.floor(Math.random() * jsonFiles.length)];
-                    return fetchRandomPagesData(randomFile);
-                })
-                .then(pages => {
-                    const randomLinks = getRandomLinks(pages, 49); // 随机选择 50 个链接
-                    const randomLinksContainer = document.getElementById('random-links');
-                    randomLinks.forEach(page => {
-                        const li = document.createElement('li');
-                        li.innerHTML = `<a href="${page.url}">${page.name}</a>`;
-                        randomLinksContainer.appendChild(li);
-                    });
-                })
-                .catch(error => {
-                    console.error('发生错误:', error);
-                    const randomLinksContainer = document.getElementById('random-links');
-                    randomLinksContainer.innerHTML = `<p>无法加载随机链接: ${error.message}</p>`;
+        // 主逻辑
+        document.addEventListener('DOMContentLoaded', async () => {
+            try {
+                // 获取文件列表
+                const files = await fetchRandomPagesFiles();
+                
+                // 随机选择一个数据文件
+                const jsonFiles = files.filter(file => file.endsWith('.json'));
+                if (jsonFiles.length === 0) throw new Error('没有找到数据文件');
+                const randomFile = jsonFiles[Math.floor(Math.random() * jsonFiles.length)];
+                
+                // 加载数据并显示链接
+                const pages = await fetchRandomPagesData(randomFile);
+                const randomLinks = getRandomLinks(pages);
+                
+                const container = document.getElementById('random-links');
+                randomLinks.forEach(page => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `<a href="${page.url}" target="_blank">${page.name}</a>`;
+                    container.appendChild(li);
                 });
+
+            } catch (error) {
+                console.error('初始化失败:', error);
+                const container = document.getElementById('random-links');
+                container.innerHTML = `<li style="grid-column: 1 / -1; color: red; padding: 20px;">
+                    错误: ${error.message}，请检查控制台获取详细信息
+                </li>`;
+            }
         });
     </script>
 </body>
