@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>农家</title>
-    <style>
-        body {
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   农家
+  </title>
+  <style>
+   body {
+        padding-top: 60px !important;
+        font-family: 'Georgia', serif;
+        font-size: 18px;
+        line-height: 1.8;
+        color: #333;
+        margin: 2em auto;
+        max-width: 800px;
+        padding: 0 20px;
+        text-align: justify;
+    }
+    
             font-family: Arial, sans-serif;
             margin: 2em;
         }
@@ -22,41 +35,426 @@
         a:hover {
             text-decoration: underline;
         }
-    </style>
-</head>
-<body>
-    <h1>📚 农家</h1>
-    <ul>
-        <li>📄 <a href="养羊法.html">养羊法</a></li>
-        <li>📄 <a href="养鱼经.html">养鱼经</a></li>
-        <li>📄 <a href="农书.html">农书</a></li>
-        <li>📄 <a href="农政全书.html">农政全书</a></li>
-        <li>📄 <a href="农桑衣食撮要.html">农桑衣食撮要</a></li>
-        <li>📄 <a href="农桑辑要.html">农桑辑要</a></li>
-        <li>📄 <a href="农歌集钞.html">农歌集钞</a></li>
-        <li>📄 <a href="农说.html">农说</a></li>
-        <li>📄 <a href="四时纂要.html">四时纂要</a></li>
-        <li>📄 <a href="天工开物.html">天工开物</a></li>
-        <li>📄 <a href="救荒本草.html">救荒本草</a></li>
-        <li>📄 <a href="氾胜之书.html">氾胜之书</a></li>
-        <li>📄 <a href="泰西水法.html">泰西水法</a></li>
-        <li>📄 <a href="牛羊日历.html">牛羊日历</a></li>
-        <li>📄 <a href="王氏农书.html">王氏农书</a></li>
-        <li>📄 <a href="田家五行.html">田家五行</a></li>
-        <li>📄 <a href="田家历.html">田家历</a></li>
-        <li>📄 <a href="神农书.html">神农书</a></li>
-        <li>📄 <a href="种芋法.html">种芋法</a></li>
-        <li>📄 <a href="老圃良言.html">老圃良言</a></li>
-        <li>📄 <a href="耒耜经.html">耒耜经</a></li>
-        <li>📄 <a href="蚕书.html">蚕书</a></li>
-        <li>📄 <a href="蚕经.html">蚕经</a></li>
-        <li>📄 <a href="补农书.html">补农书</a></li>
-        <li>📄 <a href="补农书引.html">补农书引</a></li>
-        <li>📄 <a href="野老书.html">野老书</a></li>
-        <li>📄 <a href="野菜博录.html">野菜博录</a></li>
-        <li>📄 <a href="钦定授时通考.html">钦定授时通考</a></li>
-        <li>📄 <a href="马首农言.html">马首农言</a></li>
-        <li>📄 <a href="齐民要术.html">齐民要术</a></li>
-    </ul>
-</body>
+  </style>
+ </head>
+ <body>
+  <div class="modern-navbar" style="
+    background: linear-gradient(145deg, #4b6cb7 0%, #182848 100%);
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+">
+   <nav style="
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    ">
+    <div class="nav-brand" style="
+            font-size: 1.3em;
+            font-weight: bold;
+            color: rgba(255,255,255,0.95);
+            white-space: nowrap;
+            flex-shrink: 0;
+        ">
+     <a href="/" style="color: inherit; text-decoration: none;">
+      🏯 中华古籍库
+     </a>
+    </div>
+    <div class="nav-links" style="
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            flex-grow: 1;
+        ">
+     <!-- 统一链接样式模板 -->
+     <a href="/佛藏/index.html" style="
+                color: rgba(255,255,255,0.95);
+                text-decoration: none;
+                font-size: 0.95em;
+                transition: all 0.2s ease;
+                padding: 5px 10px;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                line-height: 1.2;
+                white-space: nowrap;
+                flex-shrink: 0;
+            ">
+      <span style="font-size:1.1em">
+       📜
+      </span>
+      佛藏
+     </a>
+     <a href="/儒藏/index.html" style="
+                color: rgba(255,255,255,0.95);
+                text-decoration: none;
+                font-size: 0.95em;
+                transition: all 0.2s ease;
+                padding: 5px 10px;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                line-height: 1.2;
+                white-space: nowrap;
+                flex-shrink: 0;
+            ">
+      <span style="font-size:1.1em">
+       📚
+      </span>
+      儒藏
+     </a>
+     <a href="/医藏/index.html" style="
+                color: rgba(255,255,255,0.95);
+                text-decoration: none;
+                font-size: 0.95em;
+                transition: all 0.2s ease;
+                padding: 5px 10px;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                line-height: 1.2;
+                white-space: nowrap;
+                flex-shrink: 0;
+            ">
+      <span style="font-size:1.1em">
+       🌿
+      </span>
+      医藏
+     </a>
+     <a href="/史藏/index.html" style="
+                color: rgba(255,255,255,0.95);
+                text-decoration: none;
+                font-size: 0.95em;
+                transition: all 0.2s ease;
+                padding: 5px 10px;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                line-height: 1.2;
+                white-space: nowrap;
+                flex-shrink: 0;
+            ">
+      <span style="font-size:1.1em">
+       📖
+      </span>
+      史藏
+     </a>
+     <a href="/子藏/index.html" style="
+                color: rgba(255,255,255,0.95);
+                text-decoration: none;
+                font-size: 0.95em;
+                transition: all 0.2s ease;
+                padding: 5px 10px;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                line-height: 1.2;
+                white-space: nowrap;
+                flex-shrink: 0;
+            ">
+      <span style="font-size:1.1em">
+       🧠
+      </span>
+      子藏
+     </a>
+     <a href="/易藏/index.html" style="
+                color: rgba(255,255,255,0.95);
+                text-decoration: none;
+                font-size: 0.95em;
+                transition: all 0.2s ease;
+                padding: 5px 10px;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                line-height: 1.2;
+                white-space: nowrap;
+                flex-shrink: 0;
+            ">
+      <span style="font-size:1.1em">
+       ☯
+      </span>
+      易藏
+     </a>
+     <a href="/艺藏/index.html" style="
+                color: rgba(255,255,255,0.95);
+                text-decoration: none;
+                font-size: 0.95em;
+                transition: all 0.2s ease;
+                padding: 5px 10px;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                line-height: 1.2;
+                white-space: nowrap;
+                flex-shrink: 0;
+            ">
+      <span style="font-size:1.1em">
+       🎨
+      </span>
+      艺藏
+     </a>
+     <a href="/诗藏/index.html" style="
+                color: rgba(255,255,255,0.95);
+                text-decoration: none;
+                font-size: 0.95em;
+                transition: all 0.2s ease;
+                padding: 5px 10px;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                line-height: 1.2;
+                white-space: nowrap;
+                flex-shrink: 0;
+            ">
+      <span style="font-size:1.1em">
+       🌸
+      </span>
+      诗藏
+     </a>
+     <a href="/道藏/index.html" style="
+                color: rgba(255,255,255,0.95);
+                text-decoration: none;
+                font-size: 0.95em;
+                transition: all 0.2s ease;
+                padding: 5px 10px;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                line-height: 1.2;
+                white-space: nowrap;
+                flex-shrink: 0;
+            ">
+      <span style="font-size:1.1em">
+       🌀
+      </span>
+      道藏
+     </a>
+     <a href="/集藏/index.html" style="
+                color: rgba(255,255,255,0.95);
+                text-decoration: none;
+                font-size: 0.95em;
+                transition: all 0.2s ease;
+                padding: 5px 10px;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                line-height: 1.2;
+                white-space: nowrap;
+                flex-shrink: 0;
+            ">
+      <span style="font-size:1.1em">
+       📚
+      </span>
+      集藏
+     </a>
+    </div>
+   </nav>
+  </div>
+  <h1>
+   📚 农家
+  </h1>
+  <ul>
+   <li>
+    📄
+    <a href="养羊法.html">
+     养羊法
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="养鱼经.html">
+     养鱼经
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="农书.html">
+     农书
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="农政全书.html">
+     农政全书
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="农桑衣食撮要.html">
+     农桑衣食撮要
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="农桑辑要.html">
+     农桑辑要
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="农歌集钞.html">
+     农歌集钞
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="农说.html">
+     农说
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="四时纂要.html">
+     四时纂要
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="天工开物.html">
+     天工开物
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="救荒本草.html">
+     救荒本草
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="氾胜之书.html">
+     氾胜之书
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="泰西水法.html">
+     泰西水法
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="牛羊日历.html">
+     牛羊日历
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="王氏农书.html">
+     王氏农书
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="田家五行.html">
+     田家五行
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="田家历.html">
+     田家历
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="神农书.html">
+     神农书
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="种芋法.html">
+     种芋法
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="老圃良言.html">
+     老圃良言
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="耒耜经.html">
+     耒耜经
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="蚕书.html">
+     蚕书
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="蚕经.html">
+     蚕经
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="补农书.html">
+     补农书
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="补农书引.html">
+     补农书引
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="野老书.html">
+     野老书
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="野菜博录.html">
+     野菜博录
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="钦定授时通考.html">
+     钦定授时通考
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="马首农言.html">
+     马首农言
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="齐民要术.html">
+     齐民要术
+    </a>
+   </li>
+  </ul>
+ </body>
 </html>
