@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>编年</title>
-    <style>
-        body {
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   编年
+  </title>
+  <style>
+   body {
+        padding-top: 60px !important;
+        font-family: 'Georgia', serif;
+        font-size: 18px;
+        line-height: 1.8;
+        color: #333;
+        margin: 2em auto;
+        max-width: 800px;
+        padding: 0 20px;
+        text-align: justify;
+    }
+    
             font-family: Arial, sans-serif;
             margin: 2em;
         }
@@ -22,61 +35,546 @@
         a:hover {
             text-decoration: underline;
         }
-    </style>
-</head>
-<body>
-    <h1>📚 编年</h1>
-    <ul>
-        <li>📄 <a href="两朝纲目备要.html">两朝纲目备要</a></li>
-        <li>📄 <a href="中兴小纪.html">中兴小纪</a></li>
-        <li>📄 <a href="九朝编年备要.html">九朝编年备要</a></li>
-        <li>📄 <a href="今本竹书纪年疏证.html">今本竹书纪年疏证</a></li>
-        <li>📄 <a href="众家编年体晋史.html">众家编年体晋史</a></li>
-        <li>📄 <a href="元史续编.html">元史续编</a></li>
-        <li>📄 <a href="元经.html">元经</a></li>
-        <li>📄 <a href="前汉纪.html">前汉纪</a></li>
-        <li>📄 <a href="后汉纪.html">后汉纪</a></li>
-        <li>📄 <a href="唐创业起居注.html">唐创业起居注</a></li>
-        <li>📄 <a href="大事记.html">大事记</a></li>
-        <li>📄 <a href="大事记续编.html">大事记续编</a></li>
-        <li>📄 <a href="大唐创业起居注.html">大唐创业起居注</a></li>
-        <li>📄 <a href="宋史全文.html">宋史全文</a></li>
-        <li>📄 <a href="宋季三朝政要.html">宋季三朝政要</a></li>
-        <li>📄 <a href="小腆纪年.html">小腆纪年</a></li>
-        <li>📄 <a href="建炎以来系年要录.html">建炎以来系年要录</a></li>
-        <li>📄 <a href="御定资治通鉴纲目三编.html">御定资治通鉴纲目三编</a></li>
-        <li>📄 <a href="御批历代通鉴辑览.html">御批历代通鉴辑览</a></li>
-        <li>📄 <a href="明通鉴.html">明通鉴</a></li>
-        <li>📄 <a href="皇清开国方略.html">皇清开国方略</a></li>
-        <li>📄 <a href="皇王大纪.html">皇王大纪</a></li>
-        <li>📄 <a href="稽古录.html">稽古录</a></li>
-        <li>📄 <a href="竹书纪年.html">竹书纪年</a></li>
-        <li>📄 <a href="竹书纪年辑证.html">竹书纪年辑证</a></li>
-        <li>📄 <a href="竹书统笺.html">竹书统笺</a></li>
-        <li>📄 <a href="纲目分注拾遗.html">纲目分注拾遗</a></li>
-        <li>📄 <a href="纲目续麟.html">纲目续麟</a></li>
-        <li>📄 <a href="纲目订误.html">纲目订误</a></li>
-        <li>📄 <a href="续宋编年资治通鉴.html">续宋编年资治通鉴</a></li>
-        <li>📄 <a href="续资治通鉴.html">续资治通鉴</a></li>
-        <li>📄 <a href="续资治通鉴长编.html">续资治通鉴长编</a></li>
-        <li>📄 <a href="续资治通鉴长编拾补.html">续资治通鉴长编拾补</a></li>
-        <li>📄 <a href="西汉年纪.html">西汉年纪</a></li>
-        <li>📄 <a href="资治通鉴.html">资治通鉴</a></li>
-        <li>📄 <a href="资治通鉴前编.html">资治通鉴前编</a></li>
-        <li>📄 <a href="资治通鉴后编.html">资治通鉴后编</a></li>
-        <li>📄 <a href="资治通鉴四库.html">资治通鉴四库</a></li>
-        <li>📄 <a href="资治通鉴外纪.html">资治通鉴外纪</a></li>
-        <li>📄 <a href="资治通鉴注.html">资治通鉴注</a></li>
-        <li>📄 <a href="资治通鉴目录.html">资治通鉴目录</a></li>
-        <li>📄 <a href="资治通鉴考异.html">资治通鉴考异</a></li>
-        <li>📄 <a href="资治通鉴释例.html">资治通鉴释例</a></li>
-        <li>📄 <a href="通鉴地理通释.html">通鉴地理通释</a></li>
-        <li>📄 <a href="通鉴续编.html">通鉴续编</a></li>
-        <li>📄 <a href="通鉴胡注举正.html">通鉴胡注举正</a></li>
-        <li>📄 <a href="通鉴辑览明季编年.html">通鉴辑览明季编年</a></li>
-        <li>📄 <a href="通鉴释文辨误.html">通鉴释文辨误</a></li>
-        <li>📄 <a href="郑史编年辑录.html">郑史编年辑录</a></li>
-        <li>📄 <a href="靖康要录.html">靖康要录</a></li>
-    </ul>
-</body>
+  </style>
+ </head>
+ <body>
+  <div class="modern-navbar" style="
+    background: linear-gradient(145deg, #4b6cb7 0%, #182848 100%);
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+">
+   <nav style="
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    ">
+    <div class="nav-brand" style="
+            font-size: 1.3em;
+            font-weight: bold;
+            color: rgba(255,255,255,0.95);
+            white-space: nowrap;
+            flex-shrink: 0;
+        ">
+     <a href="/" style="color: inherit; text-decoration: none;">
+      🏯 中华古籍库
+     </a>
+    </div>
+    <div class="nav-links" style="
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            flex-grow: 1;
+        ">
+     <!-- 统一链接样式模板 -->
+     <a href="/佛藏/index.html" style="
+                color: rgba(255,255,255,0.95);
+                text-decoration: none;
+                font-size: 0.95em;
+                transition: all 0.2s ease;
+                padding: 5px 10px;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                line-height: 1.2;
+                white-space: nowrap;
+                flex-shrink: 0;
+            ">
+      <span style="font-size:1.1em">
+       📜
+      </span>
+      佛藏
+     </a>
+     <a href="/儒藏/index.html" style="
+                color: rgba(255,255,255,0.95);
+                text-decoration: none;
+                font-size: 0.95em;
+                transition: all 0.2s ease;
+                padding: 5px 10px;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                line-height: 1.2;
+                white-space: nowrap;
+                flex-shrink: 0;
+            ">
+      <span style="font-size:1.1em">
+       📚
+      </span>
+      儒藏
+     </a>
+     <a href="/医藏/index.html" style="
+                color: rgba(255,255,255,0.95);
+                text-decoration: none;
+                font-size: 0.95em;
+                transition: all 0.2s ease;
+                padding: 5px 10px;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                line-height: 1.2;
+                white-space: nowrap;
+                flex-shrink: 0;
+            ">
+      <span style="font-size:1.1em">
+       🌿
+      </span>
+      医藏
+     </a>
+     <a href="/史藏/index.html" style="
+                color: rgba(255,255,255,0.95);
+                text-decoration: none;
+                font-size: 0.95em;
+                transition: all 0.2s ease;
+                padding: 5px 10px;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                line-height: 1.2;
+                white-space: nowrap;
+                flex-shrink: 0;
+            ">
+      <span style="font-size:1.1em">
+       📖
+      </span>
+      史藏
+     </a>
+     <a href="/子藏/index.html" style="
+                color: rgba(255,255,255,0.95);
+                text-decoration: none;
+                font-size: 0.95em;
+                transition: all 0.2s ease;
+                padding: 5px 10px;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                line-height: 1.2;
+                white-space: nowrap;
+                flex-shrink: 0;
+            ">
+      <span style="font-size:1.1em">
+       🧠
+      </span>
+      子藏
+     </a>
+     <a href="/易藏/index.html" style="
+                color: rgba(255,255,255,0.95);
+                text-decoration: none;
+                font-size: 0.95em;
+                transition: all 0.2s ease;
+                padding: 5px 10px;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                line-height: 1.2;
+                white-space: nowrap;
+                flex-shrink: 0;
+            ">
+      <span style="font-size:1.1em">
+       ☯
+      </span>
+      易藏
+     </a>
+     <a href="/艺藏/index.html" style="
+                color: rgba(255,255,255,0.95);
+                text-decoration: none;
+                font-size: 0.95em;
+                transition: all 0.2s ease;
+                padding: 5px 10px;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                line-height: 1.2;
+                white-space: nowrap;
+                flex-shrink: 0;
+            ">
+      <span style="font-size:1.1em">
+       🎨
+      </span>
+      艺藏
+     </a>
+     <a href="/诗藏/index.html" style="
+                color: rgba(255,255,255,0.95);
+                text-decoration: none;
+                font-size: 0.95em;
+                transition: all 0.2s ease;
+                padding: 5px 10px;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                line-height: 1.2;
+                white-space: nowrap;
+                flex-shrink: 0;
+            ">
+      <span style="font-size:1.1em">
+       🌸
+      </span>
+      诗藏
+     </a>
+     <a href="/道藏/index.html" style="
+                color: rgba(255,255,255,0.95);
+                text-decoration: none;
+                font-size: 0.95em;
+                transition: all 0.2s ease;
+                padding: 5px 10px;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                line-height: 1.2;
+                white-space: nowrap;
+                flex-shrink: 0;
+            ">
+      <span style="font-size:1.1em">
+       🌀
+      </span>
+      道藏
+     </a>
+     <a href="/集藏/index.html" style="
+                color: rgba(255,255,255,0.95);
+                text-decoration: none;
+                font-size: 0.95em;
+                transition: all 0.2s ease;
+                padding: 5px 10px;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                line-height: 1.2;
+                white-space: nowrap;
+                flex-shrink: 0;
+            ">
+      <span style="font-size:1.1em">
+       📚
+      </span>
+      集藏
+     </a>
+    </div>
+   </nav>
+  </div>
+  <h1>
+   📚 编年
+  </h1>
+  <ul>
+   <li>
+    📄
+    <a href="两朝纲目备要.html">
+     两朝纲目备要
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="中兴小纪.html">
+     中兴小纪
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="九朝编年备要.html">
+     九朝编年备要
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="今本竹书纪年疏证.html">
+     今本竹书纪年疏证
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="众家编年体晋史.html">
+     众家编年体晋史
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="元史续编.html">
+     元史续编
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="元经.html">
+     元经
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="前汉纪.html">
+     前汉纪
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="后汉纪.html">
+     后汉纪
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="唐创业起居注.html">
+     唐创业起居注
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="大事记.html">
+     大事记
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="大事记续编.html">
+     大事记续编
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="大唐创业起居注.html">
+     大唐创业起居注
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="宋史全文.html">
+     宋史全文
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="宋季三朝政要.html">
+     宋季三朝政要
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="小腆纪年.html">
+     小腆纪年
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="建炎以来系年要录.html">
+     建炎以来系年要录
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="御定资治通鉴纲目三编.html">
+     御定资治通鉴纲目三编
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="御批历代通鉴辑览.html">
+     御批历代通鉴辑览
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="明通鉴.html">
+     明通鉴
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="皇清开国方略.html">
+     皇清开国方略
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="皇王大纪.html">
+     皇王大纪
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="稽古录.html">
+     稽古录
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="竹书纪年.html">
+     竹书纪年
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="竹书纪年辑证.html">
+     竹书纪年辑证
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="竹书统笺.html">
+     竹书统笺
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="纲目分注拾遗.html">
+     纲目分注拾遗
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="纲目续麟.html">
+     纲目续麟
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="纲目订误.html">
+     纲目订误
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="续宋编年资治通鉴.html">
+     续宋编年资治通鉴
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="续资治通鉴.html">
+     续资治通鉴
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="续资治通鉴长编.html">
+     续资治通鉴长编
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="续资治通鉴长编拾补.html">
+     续资治通鉴长编拾补
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="西汉年纪.html">
+     西汉年纪
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="资治通鉴.html">
+     资治通鉴
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="资治通鉴前编.html">
+     资治通鉴前编
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="资治通鉴后编.html">
+     资治通鉴后编
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="资治通鉴四库.html">
+     资治通鉴四库
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="资治通鉴外纪.html">
+     资治通鉴外纪
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="资治通鉴注.html">
+     资治通鉴注
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="资治通鉴目录.html">
+     资治通鉴目录
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="资治通鉴考异.html">
+     资治通鉴考异
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="资治通鉴释例.html">
+     资治通鉴释例
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="通鉴地理通释.html">
+     通鉴地理通释
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="通鉴续编.html">
+     通鉴续编
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="通鉴胡注举正.html">
+     通鉴胡注举正
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="通鉴辑览明季编年.html">
+     通鉴辑览明季编年
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="通鉴释文辨误.html">
+     通鉴释文辨误
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="郑史编年辑录.html">
+     郑史编年辑录
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="靖康要录.html">
+     靖康要录
+    </a>
+   </li>
+  </ul>
+ </body>
 </html>
