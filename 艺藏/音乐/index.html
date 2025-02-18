@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>音乐</title>
-    <style>
-        body {
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   音乐
+  </title>
+  <style>
+   body {
+        padding-top: 60px !important;
+        font-family: 'Georgia', serif;
+        font-size: 18px;
+        line-height: 1.8;
+        color: #333;
+        margin: 2em auto;
+        max-width: 800px;
+        padding: 0 20px;
+        text-align: justify;
+    }
+    
             font-family: Arial, sans-serif;
             margin: 2em;
         }
@@ -22,48 +35,468 @@
         a:hover {
             text-decoration: underline;
         }
-    </style>
-</head>
-<body>
-    <h1>📚 音乐</h1>
-    <ul>
-        <li>📄 <a href="三琴记.html">三琴记</a></li>
-        <li>📄 <a href="乐府传声.html">乐府传声</a></li>
-        <li>📄 <a href="乐府杂录.html">乐府杂录</a></li>
-        <li>📄 <a href="乐论.html">乐论</a></li>
-        <li>📄 <a href="五知斋琴谱摘录.html">五知斋琴谱摘录</a></li>
-        <li>📄 <a href="古琴疏.html">古琴疏</a></li>
-        <li>📄 <a href="唱论.html">唱论</a></li>
-        <li>📄 <a href="啸旨.html">啸旨</a></li>
-        <li>📄 <a href="声无哀乐论.html">声无哀乐论</a></li>
-        <li>📄 <a href="大音希声论.html">大音希声论</a></li>
-        <li>📄 <a href="太和正音谱.html">太和正音谱</a></li>
-        <li>📄 <a href="弹琴杂说.html">弹琴杂说</a></li>
-        <li>📄 <a href="斫琴术.html">斫琴术</a></li>
-        <li>📄 <a href="溪山琴况.html">溪山琴况</a></li>
-        <li>📄 <a href="燕乐考原.html">燕乐考原</a></li>
-        <li>📄 <a href="琴体说.html">琴体说</a></li>
-        <li>📄 <a href="琴史尽美.html">琴史尽美</a></li>
-        <li>📄 <a href="琴堂谕俗编.html">琴堂谕俗编</a></li>
-        <li>📄 <a href="琴声十六法.html">琴声十六法</a></li>
-        <li>📄 <a href="琴操.html">琴操</a></li>
-        <li>📄 <a href="琴斋宜备八则.html">琴斋宜备八则</a></li>
-        <li>📄 <a href="琴议篇.html">琴议篇</a></li>
-        <li>📄 <a href="琴诀.html">琴诀</a></li>
-        <li>📄 <a href="琴说.html">琴说</a></li>
-        <li>📄 <a href="琴谱序.html">琴谱序</a></li>
-        <li>📄 <a href="琴赋-晋-嵇康.html">琴赋-晋-嵇康</a></li>
-        <li>📄 <a href="琴赋.html">琴赋</a></li>
-        <li>📄 <a href="琵琶录.html">琵琶录</a></li>
-        <li>📄 <a href="破琴诗.html">破琴诗</a></li>
-        <li>📄 <a href="碣石调幽兰.html">碣石调幽兰</a></li>
-        <li>📄 <a href="羯鼓录.html">羯鼓录</a></li>
-        <li>📄 <a href="西麓堂琴统摘录.html">西麓堂琴统摘录</a></li>
-        <li>📄 <a href="道咸以来梨园系年小录.html">道咸以来梨园系年小录</a></li>
-        <li>📄 <a href="钝吟杂录.html">钝吟杂录</a></li>
-        <li>📄 <a href="顾误录.html">顾误录</a></li>
-        <li>📄 <a href="鸥鹭忘机.html">鸥鹭忘机</a></li>
-        <li>📄 <a href="鼓琴训论.html">鼓琴训论</a></li>
-    </ul>
-</body>
+  </style>
+ </head>
+ <body>
+  <div class="modern-navbar" style="
+    background: linear-gradient(145deg, #4b6cb7 0%, #182848 100%);
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+">
+   <nav style="
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    ">
+    <div class="nav-brand" style="
+            font-size: 1.3em;
+            font-weight: bold;
+            color: rgba(255,255,255,0.95);
+            white-space: nowrap;
+            flex-shrink: 0;
+        ">
+     <a href="/" style="color: inherit; text-decoration: none;">
+      🏯 中华古籍库
+     </a>
+    </div>
+    <div class="nav-links" style="
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            flex-grow: 1;
+        ">
+     <!-- 统一链接样式模板 -->
+     <a href="/佛藏/index.html" style="
+                color: rgba(255,255,255,0.95);
+                text-decoration: none;
+                font-size: 0.95em;
+                transition: all 0.2s ease;
+                padding: 5px 10px;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                line-height: 1.2;
+                white-space: nowrap;
+                flex-shrink: 0;
+            ">
+      <span style="font-size:1.1em">
+       📜
+      </span>
+      佛藏
+     </a>
+     <a href="/儒藏/index.html" style="
+                color: rgba(255,255,255,0.95);
+                text-decoration: none;
+                font-size: 0.95em;
+                transition: all 0.2s ease;
+                padding: 5px 10px;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                line-height: 1.2;
+                white-space: nowrap;
+                flex-shrink: 0;
+            ">
+      <span style="font-size:1.1em">
+       📚
+      </span>
+      儒藏
+     </a>
+     <a href="/医藏/index.html" style="
+                color: rgba(255,255,255,0.95);
+                text-decoration: none;
+                font-size: 0.95em;
+                transition: all 0.2s ease;
+                padding: 5px 10px;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                line-height: 1.2;
+                white-space: nowrap;
+                flex-shrink: 0;
+            ">
+      <span style="font-size:1.1em">
+       🌿
+      </span>
+      医藏
+     </a>
+     <a href="/史藏/index.html" style="
+                color: rgba(255,255,255,0.95);
+                text-decoration: none;
+                font-size: 0.95em;
+                transition: all 0.2s ease;
+                padding: 5px 10px;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                line-height: 1.2;
+                white-space: nowrap;
+                flex-shrink: 0;
+            ">
+      <span style="font-size:1.1em">
+       📖
+      </span>
+      史藏
+     </a>
+     <a href="/子藏/index.html" style="
+                color: rgba(255,255,255,0.95);
+                text-decoration: none;
+                font-size: 0.95em;
+                transition: all 0.2s ease;
+                padding: 5px 10px;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                line-height: 1.2;
+                white-space: nowrap;
+                flex-shrink: 0;
+            ">
+      <span style="font-size:1.1em">
+       🧠
+      </span>
+      子藏
+     </a>
+     <a href="/易藏/index.html" style="
+                color: rgba(255,255,255,0.95);
+                text-decoration: none;
+                font-size: 0.95em;
+                transition: all 0.2s ease;
+                padding: 5px 10px;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                line-height: 1.2;
+                white-space: nowrap;
+                flex-shrink: 0;
+            ">
+      <span style="font-size:1.1em">
+       ☯
+      </span>
+      易藏
+     </a>
+     <a href="/艺藏/index.html" style="
+                color: rgba(255,255,255,0.95);
+                text-decoration: none;
+                font-size: 0.95em;
+                transition: all 0.2s ease;
+                padding: 5px 10px;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                line-height: 1.2;
+                white-space: nowrap;
+                flex-shrink: 0;
+            ">
+      <span style="font-size:1.1em">
+       🎨
+      </span>
+      艺藏
+     </a>
+     <a href="/诗藏/index.html" style="
+                color: rgba(255,255,255,0.95);
+                text-decoration: none;
+                font-size: 0.95em;
+                transition: all 0.2s ease;
+                padding: 5px 10px;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                line-height: 1.2;
+                white-space: nowrap;
+                flex-shrink: 0;
+            ">
+      <span style="font-size:1.1em">
+       🌸
+      </span>
+      诗藏
+     </a>
+     <a href="/道藏/index.html" style="
+                color: rgba(255,255,255,0.95);
+                text-decoration: none;
+                font-size: 0.95em;
+                transition: all 0.2s ease;
+                padding: 5px 10px;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                line-height: 1.2;
+                white-space: nowrap;
+                flex-shrink: 0;
+            ">
+      <span style="font-size:1.1em">
+       🌀
+      </span>
+      道藏
+     </a>
+     <a href="/集藏/index.html" style="
+                color: rgba(255,255,255,0.95);
+                text-decoration: none;
+                font-size: 0.95em;
+                transition: all 0.2s ease;
+                padding: 5px 10px;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                line-height: 1.2;
+                white-space: nowrap;
+                flex-shrink: 0;
+            ">
+      <span style="font-size:1.1em">
+       📚
+      </span>
+      集藏
+     </a>
+    </div>
+   </nav>
+  </div>
+  <h1>
+   📚 音乐
+  </h1>
+  <ul>
+   <li>
+    📄
+    <a href="三琴记.html">
+     三琴记
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="乐府传声.html">
+     乐府传声
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="乐府杂录.html">
+     乐府杂录
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="乐论.html">
+     乐论
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="五知斋琴谱摘录.html">
+     五知斋琴谱摘录
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="古琴疏.html">
+     古琴疏
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="唱论.html">
+     唱论
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="啸旨.html">
+     啸旨
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="声无哀乐论.html">
+     声无哀乐论
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="大音希声论.html">
+     大音希声论
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="太和正音谱.html">
+     太和正音谱
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="弹琴杂说.html">
+     弹琴杂说
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="斫琴术.html">
+     斫琴术
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="溪山琴况.html">
+     溪山琴况
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="燕乐考原.html">
+     燕乐考原
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="琴体说.html">
+     琴体说
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="琴史尽美.html">
+     琴史尽美
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="琴堂谕俗编.html">
+     琴堂谕俗编
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="琴声十六法.html">
+     琴声十六法
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="琴操.html">
+     琴操
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="琴斋宜备八则.html">
+     琴斋宜备八则
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="琴议篇.html">
+     琴议篇
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="琴诀.html">
+     琴诀
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="琴说.html">
+     琴说
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="琴谱序.html">
+     琴谱序
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="琴赋-晋-嵇康.html">
+     琴赋-晋-嵇康
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="琴赋.html">
+     琴赋
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="琵琶录.html">
+     琵琶录
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="破琴诗.html">
+     破琴诗
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="碣石调幽兰.html">
+     碣石调幽兰
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="羯鼓录.html">
+     羯鼓录
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="西麓堂琴统摘录.html">
+     西麓堂琴统摘录
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="道咸以来梨园系年小录.html">
+     道咸以来梨园系年小录
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="钝吟杂录.html">
+     钝吟杂录
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="顾误录.html">
+     顾误录
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="鸥鹭忘机.html">
+     鸥鹭忘机
+    </a>
+   </li>
+   <li>
+    📄
+    <a href="鼓琴训论.html">
+     鼓琴训论
+    </a>
+   </li>
+  </ul>
+ </body>
 </html>
