@@ -1,23 +1,23 @@
-# 殆知阁古文全集分析
+# 中华古籍库·殆知阁古文全集分析
 
-# 古文全集分类统计
+# 中华古籍库·古文全集分类统计
 
-| 分类   | 书籍数量 | 总字数      |
-|--------|----------|-------------|
-| [道藏](https://github.com/lhw828/GuWen/blob/main/md/%E9%81%93%E8%97%8F.md)   | 1721     | 45,480,558  |
-| [佛藏](https://github.com/lhw828/GuWen/blob/main/md/%E4%BD%9B%E8%97%8F.md)   | 5135     | 219,219,626 |
-| [集藏](https://github.com/lhw828/GuWen/blob/main/md/%E9%9B%86%E8%97%8F.md)   | 1948     | 351,516,374 |
-| [儒藏](https://github.com/lhw828/GuWen/blob/main/md/%E5%84%92%E8%97%8F.md)   | 908      | 139,494,169 |
-| [诗藏](https://github.com/lhw828/GuWen/blob/main/md/%E8%AF%97%E8%97%8F.md)   | 776      | 117,476,974 |
-| [史藏](https://github.com/lhw828/GuWen/blob/main/md/%E5%8F%B2%E8%97%8F.md)   | 2043     | 488,528,965 |
-| [医藏](https://github.com/lhw828/GuWen/blob/main/md/%E5%8C%BB%E8%97%8F.md)   | 911      | 113,483,821 |
-| [艺藏](https://github.com/lhw828/GuWen/blob/main/md/%E8%89%BA%E8%97%8F.md)   | 446      | 19,259,622  |
-| [易藏](https://github.com/lhw828/GuWen/blob/main/md/%E6%98%93%E8%97%8F.md)   | 343      | 34,965,572  |
-| [子藏](https://github.com/lhw828/GuWen/blob/main/md/%E5%AD%90%E8%97%8F.md)   | 1463     | 213,911,992 |
-| 合计   | 15694    |1,743,337,673|
+| 分类   | 书籍数量 | 总字数      | 占比  |
+|--------|----------:|-------------:|-------:|
+| [道藏](https://github.com/lhw828/GuWen/blob/main/md/%E9%81%93%E8%97%8F.md)   | 1721     | 45,480,558  |2.6088%|
+| [佛藏](https://github.com/lhw828/GuWen/blob/main/md/%E4%BD%9B%E8%97%8F.md)   | 5135     | 219,219,626 |12.5747%|
+| [集藏](https://github.com/lhw828/GuWen/blob/main/md/%E9%9B%86%E8%97%8F.md)   | 1948     | 351,516,374 |20.1634%|
+| [儒藏](https://github.com/lhw828/GuWen/blob/main/md/%E5%84%92%E8%97%8F.md)   | 908      | 139,494,169 |8.0016%|
+| [诗藏](https://github.com/lhw828/GuWen/blob/main/md/%E8%AF%97%E8%97%8F.md)   | 776      | 117,476,974 |6.7386%|
+| [史藏](https://github.com/lhw828/GuWen/blob/main/md/%E5%8F%B2%E8%97%8F.md)   | 2043     | 488,528,965 |28.0226%|
+| [医藏](https://github.com/lhw828/GuWen/blob/main/md/%E5%8C%BB%E8%97%8F.md)   | 911      | 113,483,821 |6.5096%|
+| [艺藏](https://github.com/lhw828/GuWen/blob/main/md/%E8%89%BA%E8%97%8F.md)   | 446      | 19,259,622  |1.1048%|
+| [易藏](https://github.com/lhw828/GuWen/blob/main/md/%E6%98%93%E8%97%8F.md)   | 343      | 34,965,572  |2.0057%|
+| [子藏](https://github.com/lhw828/GuWen/blob/main/md/%E5%AD%90%E8%97%8F.md)   | 1463     | 213,911,992 |12.2703%|
+| 合计   | 15694    |1,743,337,673|100%|
 
 
-## 1. 殆知阁古文全集总体统计
+## 1. 中华古籍库·殆知阁古文全集总体统计
 
 - 书籍数量: 15694
 - 总字数: 1743337673
@@ -125,7 +125,7 @@
 | 99 | [史藏](https://github.com/lhw828/GuWen/blob/main/md/%E5%8F%B2%E8%97%8F.md)\政书\通典 | 2065129 | 5.9MB |
 | 100 | [诗藏](https://github.com/lhw828/GuWen/blob/main/md/%E8%AF%97%E8%97%8F.md)\诗集\列朝诗集 | 2059983 | 5.7MB |
 
-## 2. 殆知阁古文全集高频字与高频词统计（前30名）
+## 2. 中华古籍库·殆知阁古文全集高频字与高频词统计（前30名）
 
 | 排名 | 汉字 | 出现次数 | 词语 | 出现次数 |
 |------|------|----------|------|----------|
